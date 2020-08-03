@@ -86,9 +86,16 @@
     </ul>
   </div>
 <script>
-	var sheet = "https://spreadsheets.google.com/feeds/list/13rVV9ypVFK2sPeCMFiIwdg8w86mJP7FhuUXBX-yeR3s/1/public/values?alt=json";
+	var url = "https://spreadsheets.google.com/feeds/list/13rVV9ypVFK2sPeCMFiIwdg8w86mJP7FhuUXBX-yeR3s/1/public/values?alt=json";
+	
+	fetch(url).then(function(response) {
+	  return response.json();
+	}).then(function(json) {
+	  // jsonにJSONオブジェクトで結果が渡される
+	  ...
+	});
 
-	document.write(sheet);
+	document.write(json);
 </script>
 <script src="app.js"></script>
 <!-- ウェブアプリマニフェストの読み込み -->
