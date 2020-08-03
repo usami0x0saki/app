@@ -28,7 +28,6 @@
 	 <div class="container">
 	
 	<div class="event" id="event">
-	<div id="output"></div>
 		
             <section class="event-box">
               <div class="event-body">
@@ -86,15 +85,6 @@
        </li>
     </ul>
   </div>
-<script type= text/javascript>
-var sheet = "https://spreadsheets.google.com/feeds/list/17d5j9p7YZGKOSQW27BkDc5WDPMdbIIPfOY2NdhaHARI/od6/public/values?alt=json";
-var json = JSON.parse(sheet);
-			
-window.onload = function onLoad() {
-target = document.getElementById("output");
-target.innerHTML = json;
-}
-</script>
     
 <script src="app.js"></script>
 <!-- ウェブアプリマニフェストの読み込み -->
