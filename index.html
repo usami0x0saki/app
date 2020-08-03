@@ -19,20 +19,25 @@
 <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
 </head>
 <body>
+	<script>
+		var sheet = "https://spreadsheets.google.com/feeds/list/13rVV9ypVFK2sPeCMFiIwdg8w86mJP7FhuUXBX-yeR3s/od6/public/values?alt=json"
+		var json = JSON.parse(sheet);
+
+		return json
+			
+		window.onload = function onLoad() {
+			target = document.getElementById("output");
+			target.innerHTML = json;
+		}
+	</script>
+	<div id="output"></div>
 	<header>
 		<h1>
 			<a href="https://script.google.com/macros/s/AKfycbwe6AJUtZP0nUvx2r-Sfa-92DawOLI525-3o0N0YSy3smRk3aA/exec">イベントリスト君</a> 
 		</h1>
 	</header>
 	<main>
-		<script>
-			var sheet = "https://spreadsheets.google.com/feeds/list/13rVV9ypVFK2sPeCMFiIwdg8w86mJP7FhuUXBX-yeR3s/od6/public/values?alt=json"
-			var json = JSON.parse(sheet);
-
-			return json
-		</script>	
-		
-		 <div class="container">
+	 <div class="container">
 	
 	<div class="event" id="event">
 		
