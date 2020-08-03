@@ -86,8 +86,9 @@
     </ul>
   </div>
 <script>
-	let mojiretu = "Hello World";
-	document.write(mojiretu);
+	var sheet = "https://spreadsheets.google.com/feeds/list/13rVV9ypVFK2sPeCMFiIwdg8w86mJP7FhuUXBX-yeR3s/1/public/values?alt=json";
+	var json = JSON.parse(sheet);
+	document.write(sheet);
 </script>
 <script src="app.js"></script>
 <!-- ウェブアプリマニフェストの読み込み -->
